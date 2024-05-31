@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: service-product
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecomm_product
+    username: root
+    password: secret
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
+
+server:
+  port: 8081
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true

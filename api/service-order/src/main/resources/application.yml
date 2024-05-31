@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: service-order
+  datasource:
+    username: root
+    url: jdbc:postgresql://localhost:5432/ecomm_order
+    password: secret
+
+server:
+  port: '8082'
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+
