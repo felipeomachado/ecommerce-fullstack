@@ -23,7 +23,6 @@ public class ServiceProductApplication {
 
 	@PostConstruct
 	public void init() {
-
 		var count = repository.count();
 
 		if (count == 0) {
